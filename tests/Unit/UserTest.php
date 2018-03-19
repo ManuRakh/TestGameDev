@@ -3,20 +3,17 @@
 namespace Tests\Unit;
 
 use Tests\TestCase;
+use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
-class ExampleTest extends TestCase
+class UserTest extends TestCase
 {
     /**
      * A basic test example.
      *
      * @return void
      */
-    public function testBasicTest()
-    {        
-        $this->action('GET', 'HomeController@index');
-
-
-        $this->assertTrue(true);
+    public function testExample()
+    {
     }
 }
