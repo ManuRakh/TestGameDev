@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/addmember',"MemberController@addmember")->name('addmember'); //имя чтобы ссылаться на него при вызове апи
+Route::get('/addcompany',"CompanyController@addcompany")->name('addcompany'); //имя чтобы ссылаться на него при вызове апи
+Route::get('/getcompany',"CompanyController@getcompany")->name('getcompany'); //имя чтобы ссылаться на него при вызове апи
+Route::get('/removecompany/{id}',"CompanyController@removecompany")->name('removecompany'); //имя чтобы ссылаться на него при вызове апи
