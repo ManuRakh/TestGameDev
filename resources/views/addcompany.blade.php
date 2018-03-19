@@ -27,8 +27,9 @@ success();
 <input type = "text" placeholder = "Campaign_type_ID " name= "Campaign_type_ID"><br/>
 
 <input type = "hidden" value = "{{csrf_token()}}" name="Name">
+<!-- в первом хидене Uid пользователя т.к в задании не сказано создать его в таблице, решил добавить его в поле Name -->
 <input type = "hidden" value  = "SomeTextFromGame" placeholder = "SomeText" name= "Message_end"><br/>
-
+<!-- Во втором хидене произвольный текст, не до конца понял задание. -->
 <input type ="submit" value  ="submit">
 </form>
 
