@@ -13,7 +13,7 @@ class CreateUsersTable extends Migration
      */
     public function up()
     {
-        Schema::create('Campaign', function (Blueprint $table) {
+        Schema::create('Campaigns', function (Blueprint $table) {
             $table->increments('id');//Айди с автоинкрементом, и стринги варчары по длине 255
             $table->string('Accounts_ID');
             $table->string('Campaign_type_ID');
