@@ -21,4 +21,6 @@ Route::get('/addcompany',"CompanyController@addcompany")->name('addcompany'); //
 Route::post('/addcompany',"CompanyController@addcompanydo")->name('addcompanydo'); //имя чтобы ссылаться на него при вызове апи
 
 Route::get('/getcompany',"CompanyController@getcompany")->name('getcompany'); //имя чтобы ссылаться на него при вызове апи
+Route::get('/editcompany/{id}',"CompanyController@editcompany")->name('editcompany'); //имя чтобы ссылаться на него при вызове апи
+
 Route::get('/removecompany/{id}',"CompanyController@removecompany")->name('removecompany'); //имя чтобы ссылаться на него при вызове апи

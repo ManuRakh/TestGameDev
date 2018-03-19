@@ -40,9 +40,25 @@ session([
 }
 public function getcompany() // получение данных о кампании
 {
-return "";
+    $campaign =   Campaign::select('Campaign_type_ID','Name','Accounts_ID')->get();
+if($campaign)
+ {
+        return view('listofcompanies')->with([
+            'campaigns'=>$campaign,
+        ]);
+        
+    }
+       // 
+
+    $campaign = new Campaign;
+
+return view('listofcompanies');
 }
 public function removecompany($id) // удаление кампании по id
+{
+    return $id;
+}
+public function editcompany($id)
 {
     return $id;
 }

@@ -68,7 +68,9 @@
        
        <a href ="route{{addmember}}"> Регистрация нового пользователя</a>
        <a href ="route{{addcompany}}">Создать новую кампанию</a>
-       <a href ="route{{addmember}}"> Получить информацию о кампании</a>
+       <a href ="route{{getcompany}}"> Получить информацию о кампании</a>
+       <a href ="route{{editcompany}}"> Получить информацию о кампании</a>
+
        <a href ="route{{addmember}}"> Удалить кампанию</a>
 
     </body>
