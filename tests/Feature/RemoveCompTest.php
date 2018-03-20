@@ -1,8 +1,5 @@
 <?php
 
-namespace Tests\Feature;
-
-use Tests\TestCase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
@@ -15,7 +12,7 @@ class RemoveCompTest extends TestCase
      */
     public function testExample()
     {
-        $response = $this->get('/removecompany');
+        $response = $this->action('GET','CompanyController@removecompanydo',array('id' => 1));
  
     }
 }
